@@ -73,6 +73,12 @@ button.link:hover { color: var(--ink); }
 /* hero */
 .hero { padding: 72px 24px 80px; text-align: center; }
 .eyebrow { font-family: var(--mono); text-transform: uppercase; letter-spacing: .28em; font-size: .8rem; margin: 0 0 22px; }
+.cursor-lamp { display: block; width: 52px; height: 58px; margin: -4px auto 20px; overflow: visible; }
+.cursor-lamp-shade { fill: var(--lime); stroke: var(--ink); stroke-width: 2; stroke-linejoin: round; }
+.cursor-lamp-eye { fill: var(--card); stroke: var(--ink); stroke-width: 1.5; }
+.cursor-lamp-pupils { fill: var(--ink); transition: transform 110ms ease-out; }
+.cursor-lamp-frame { fill: none; stroke: var(--ink); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+@media (prefers-reduced-motion: reduce) { .cursor-lamp-pupils { transition: none; } }
 .hero h1 { font-size: clamp(2.8rem, 9vw, 6.2rem); line-height: .98; letter-spacing: -.055em; font-weight: 800; margin: 0 0 32px; }
 mark { background: linear-gradient(transparent 62%, var(--lime) 62%, var(--lime) 92%, transparent 92%); color: inherit; padding: 0 .06em; }
 .lead { color: var(--muted); font-size: 1.2rem; line-height: 1.7; margin: 0 auto 36px; }

@@ -18,6 +18,7 @@ import { setSeo, PAGES } from "./seo";
 import { SkeletonCards } from "./Skeleton";
 import ScrollJump from "./ScrollJump";
 import { Character, styleFor } from "./character";
+import CursorLamp from "./features/delight/CursorLamp";
 // The creator (and three.js) loads only when someone opens it.
 const CharacterCreator = lazy(() => import("./CharacterCreator"));
 const GameBoard = lazy(() => import("./GameBoard"));
@@ -391,6 +392,7 @@ export default function App({ view = "home", gameName, indieId, featurePage }: {
         {view === "home" && (
         <section className="container hero">
           <p className="eyebrow">Big imagination. Played everywhere.</p>
+          <CursorLamp />
           <h1>Good vibes.<br /><mark>Good games.</mark></h1>
           <p className="lead">
             Games made by builders in the community.{" "}<br />
