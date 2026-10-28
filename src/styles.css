@@ -73,7 +73,7 @@ button.link:hover { color: var(--ink); }
 /* hero */
 .hero { padding: 72px 24px 80px; text-align: center; }
 .eyebrow { font-family: var(--mono); text-transform: uppercase; letter-spacing: .28em; font-size: .8rem; margin: 0 0 22px; }
-.cursor-lamp { display: block; width: 80px; height: 90px; margin: -4px auto 20px; overflow: visible; }
+.cursor-lamp { display: block; width: 240px; height: 270px; margin: -4px auto 20px; overflow: visible; }
 .cursor-lamp-shade { fill: var(--lime); stroke: var(--ink); stroke-width: 2; stroke-linejoin: round; }
 .cursor-lamp-eye { fill: var(--card); stroke: var(--ink); stroke-width: 1.5; }
 .cursor-lamp-pupils { fill: var(--ink); transition: transform 110ms ease-out; }
