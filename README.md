@@ -66,8 +66,9 @@ Part of `src/features/email`: the **Get the tournament by email** box on start.n
 Visitors leave an address and confirm by link; signed-in players turn on tournament and results emails in one click.
 
 ## Deploy (Coolify)
-Dockerfile build pack (nginx, port 80). VITE_API_URL and VITE_GOOGLE_CLIENT_ID are build-time, so mark them as
-Build Variables in Coolify. GitHub secrets: COOLIFY_WEBHOOK_URL (optional COOLIFY_TOKEN); the
+Dockerfile build pack (nginx, port 80). Production builds default VITE_API_URL to `https://api.start.ng` in
+`.env.production`; set it as a Build Variable only when using a different API. VITE_GOOGLE_CLIENT_ID is also
+a build-time variable and should be set as a Build Variable in Coolify. GitHub secrets: COOLIFY_WEBHOOK_URL (optional COOLIFY_TOKEN); the
 Deploy (Coolify) workflow runs only after Malware Scan (CI Gate) passes on main.
 
 ## Google Analytics
